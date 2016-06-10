@@ -14,6 +14,7 @@
 		C66BB86B1D08F23100093FB2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C66BB8691D08F23100093FB2 /* LaunchScreen.storyboard */; };
 		C66BB8761D08F23100093FB2 /* photoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66BB8751D08F23100093FB2 /* photoTests.swift */; };
 		C66BB8811D08F23200093FB2 /* photoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66BB8801D08F23200093FB2 /* photoUITests.swift */; };
+		C66BB9531D0ABB3300093FB2 /* todai.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C66BB9521D0ABB3300093FB2 /* todai.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		C66BB87C1D08F23200093FB2 /* photoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = photoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C66BB8801D08F23200093FB2 /* photoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = photoUITests.swift; sourceTree = "<group>"; };
 		C66BB8821D08F23200093FB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C66BB9521D0ABB3300093FB2 /* todai.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = todai.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		C66BB85F1D08F23100093FB2 /* photo */ = {
 			isa = PBXGroup;
 			children = (
+				C66BB9521D0ABB3300093FB2 /* todai.jpg */,
 				C66BB8601D08F23100093FB2 /* AppDelegate.swift */,
 				C66BB8621D08F23100093FB2 /* ViewController.swift */,
 				C66BB8641D08F23100093FB2 /* Main.storyboard */,
@@ -193,6 +196,7 @@
 				TargetAttributes = {
 					C66BB85C1D08F23100093FB2 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = F3VCQWP62D;
 					};
 					C66BB8701D08F23100093FB2 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -230,6 +234,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C66BB86B1D08F23100093FB2 /* LaunchScreen.storyboard in Resources */,
+				C66BB9531D0ABB3300093FB2 /* todai.jpg in Resources */,
 				C66BB8681D08F23100093FB2 /* Assets.xcassets in Resources */,
 				C66BB8661D08F23100093FB2 /* Main.storyboard in Resources */,
 			);
@@ -399,10 +404,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = photo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "---.photo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -410,10 +418,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = photo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "---.photo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -482,6 +493,7 @@
 				C66BB8871D08F23200093FB2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C66BB8881D08F23200093FB2 /* Build configuration list for PBXNativeTarget "photoTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +502,7 @@
 				C66BB88A1D08F23200093FB2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C66BB88B1D08F23200093FB2 /* Build configuration list for PBXNativeTarget "photoUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +511,7 @@
 				C66BB88D1D08F23200093FB2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
